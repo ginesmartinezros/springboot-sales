@@ -8,17 +8,15 @@
 
 `mvn spring-boot:run`
 
+or in Windows
+
+`.\run_maven.bat`
+
 - Docker
 
 `docker build -t pbenito-app .`
 
 `docker run -p 8080:8080 -e SECRET_TOKEN_PBENITO=TOKEN pbenito-app`
-
-`docker login`
-
-`docker tag pbenito-app pbenito/pbenito-app:latest`
-
-`docker push pbenito/pbenito-app:latest`
 
 - API
   - `api/test/`
