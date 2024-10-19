@@ -27,8 +27,11 @@ public class ApiController {
         // Si el token es válido, creamos un mapa con los datos que queremos devolver en
         // JSON
         Map<String, String> data = new HashMap<>();
-        data.put("message", "Acceso concedido");
-        data.put("status", "success");
+        data.put("Fecha", "Venta");
+        data.put("01-10-2024", "100");
+        data.put("02-10-2024", "110");
+        data.put("03-10-2024", "130");
+        data.put("04-10-2024", "120");
 
         // Devolvemos una respuesta con el JSON y un estado 200 (OK)
         return ResponseEntity.ok(data);
